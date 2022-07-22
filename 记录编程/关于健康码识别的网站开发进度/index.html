@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>关于健康码识别的网站开发进度记录 | 咕咕咕的小破站</title><meta name="keywords" content="SpringBoot,java"><meta name="author" content="咕咕咕"><meta name="copyright" content="咕咕咕"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于这个网站这个网站是大创项目的网站。用于健康码识别，目前什么都没有，只有一个空项目。啊，对，没错。github仓库地址   关于网站的架构网站前端打算使用vue，前端由青虬负责编写网站后端打算使用springboot，由我负责项目核心功能由顾のEvery Day负责，他也是这个项目的负责人（组长）。 图像识别那块，我暂时还不是很懂啦，反正很厉害就对了前后端肯定是要分离的，使用ajax，数据格式使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于健康码识别的网站开发进度记录">
+<meta property="og:url" content="https://2450123.github.io/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/index.html">
+<meta property="og:site_name" content="咕咕咕的小破站">
+<meta property="og:description" content="关于这个网站这个网站是大创项目的网站。用于健康码识别，目前什么都没有，只有一个空项目。啊，对，没错。github仓库地址   关于网站的架构网站前端打算使用vue，前端由青虬负责编写网站后端打算使用springboot，由我负责项目核心功能由顾のEvery Day负责，他也是这个项目的负责人（组长）。 图像识别那块，我暂时还不是很懂啦，反正很厉害就对了前后端肯定是要分离的，使用ajax，数据格式使">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg">
+<meta property="article:published_time" content="2022-05-21T12:22:23.000Z">
+<meta property="article:modified_time" content="2022-07-22T11:47:40.167Z">
+<meta property="article:author" content="咕咕咕">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://2450123.github.io/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于健康码识别的网站开发进度记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-07-22 19:47:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyIpT.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s1.ax1x.com/2022/03/13/bqyTcF.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">咕咕咕的小破站</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">关于健康码识别的网站开发进度记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-21T12:22:23.000Z" title="发表于 2022-05-21 20:22:23">2022-05-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-22T11:47:40.167Z" title="更新于 2022-07-22 19:47:40">2022-07-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/">记录编程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="关于健康码识别的网站开发进度记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="关于这个网站"><a href="#关于这个网站" class="headerlink" title="关于这个网站"></a>关于这个网站</h2><p>这个网站是大创项目的网站。用于健康码识别，目前什么都没有，只有一个空项目。<del>啊，对，没错。</del><br><a target="_blank" rel="noopener" href="https://github.com/2450123/jkm_web">github仓库地址</a>  </p>
+<h3 id="关于网站的架构"><a href="#关于网站的架构" class="headerlink" title="关于网站的架构"></a>关于网站的架构</h3><p>网站前端打算使用vue，前端由<a target="_blank" rel="noopener" href="https://reol077.github.io/">青虬</a>负责编写<br>网站后端打算使用springboot，由我负责<br>项目核心功能由<a target="_blank" rel="noopener" href="https://gufanstudy.github.io/">顾のEvery Day</a>负责，他也是这个项目的负责人（组长）。 <del>图像识别那块，我暂时还不是很懂啦，反正很厉害就对了</del><br>前后端肯定是要分离的，使用ajax，数据格式使用json。 <del>jsp不分离属实痛苦</del><br>后端与图像识别的python程序，目前打算使用socket（套接字）进行通信。 <del>目前只是了解过，还需要学习</del><br>而且临近期末，springboot暂时还没学完，所以开发进度在七月前估计会很慢。 <del>可能根本没有进度</del>  </p>
+<p>目前进度：确认大体需求<br><img src= "/img/friend_404.gif" data-lazy-src="/../images/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95/%E5%A4%A7%E4%BD%93%E9%9C%80%E6%B1%82.png" alt="大体需求.png"></p>
+<blockquote>
+<p>2022-05-21<br>周六，楼下的广场舞很吵。</p>
+</blockquote>
+<h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><p>数据库设计了四张表，老师、学生、权限、班级<br>因为需求比较简单，比如权限暂时只有两种——能否查看统计信息，所以并没有采取复杂的角色和权限表。<br>同时因为对学院和专业没有什么明确的实际操作，所以写在了班级中，并未单独分表。<br>关于学生健康码信息的表，目前计划动态新建表，即每天新建一张表用于存储健康码的相关信息</p>
+<p>目前进度：创建数据库，搭建项目基本配置<br><img src= "/img/friend_404.gif" data-lazy-src="/../images/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95/%E6%95%B0%E6%8D%AE%E5%BA%93er%E5%9B%BE.png" alt="img.png"></p>
+<blockquote>
+<p>2022-07-05<br>果然七月前完全没有进度，紧张的期末也终于是结束了。python实训（网课）开始了。<br><del>（还有几门成绩还不出，是不打算出了吗）</del></p>
+</blockquote>
+<h2 id="具体开发过程"><a href="#具体开发过程" class="headerlink" title="具体开发过程"></a>具体开发过程</h2><h3 id="注册部分（未完成"><a href="#注册部分（未完成" class="headerlink" title="注册部分（未完成"></a>注册部分（未完成</h3><p>注册部分使用邮箱进行验证，使用到了springboot自带的mail组件。还挺好用的，和之前使用的javax.mail的大体流程（邮件的设置之类的）是一样的。<br>同时也决定使用redis数据库，来解决同一用户使用不同浏览器或设备来进行邮件验证的数据共享问题。比之前采取静态类存取sessionId的方式会好一些。<br>最后，在发送邮件的调试过程中，我也决定使用日志来打印一些信息，进行排错，而非System.out.println()。  </p>
+<p>目前进度：大概完成了注册的三分之一。</p>
+<blockquote>
+<p>2022-07-08<br>今天也算是见证历史了，日本前首相安倍晋三今天中午遇刺，下午宣布死亡。<br>考虑以后可以给博客添加上类似历史上的今天这类tips。<del>应该会有意义吧</del>  </p>
+</blockquote>
+<h3 id="老师注册部分（基本完成"><a href="#老师注册部分（基本完成" class="headerlink" title="老师注册部分（基本完成"></a>老师注册部分（基本完成</h3><p>注册的流程大概如下：  </p>
+<ol>
+<li>发送注册请求</li>
+<li>生成验证码，将验证码同用户信息一起写入redis，发送验证邮件</li>
+<li>访问验证链接</li>
+<li>验证验证码是否正确<ol>
+<li>正确则修改redis中的数据，将用户改为在线状态，用户邮箱写入cookie，同时修改它们的生命周期（方便后期登录使用），发送注册成功的邮件，写入数据库</li>
+<li>错误则返回错误信息</li>
+</ol>
+</li>
+</ol>
+<p>redis中缓存的信息也从原来的string改成了hash，因为考虑到登录会使用，所以缓存中用户信息得记录详细。<br>关于验证的链接，返回的是html页面，使用的是thymeleaf，其实不太想用的，但总不能返回个json数据吧。因为页面显示完信息后，应该会3s后跳转到首页。比jsp方便了一些吧。（暂时没有好的处理方式<br>最后就是关于Controller层和Service层的一些想法。<br>业务层应该把这个请求分解成一个个服务，不同的请求也可以重用服务，提高代码的复用性。dao层就只做与数据库的交互。<br>对于Controller层和Service层的划分和设计，目前设计的还不是很好。得多写多看吧。  </p>
+<blockquote>
+<p>2022-07-10<br>脑子有点乱，去睡会觉。想把个人介绍写写，但还没想好怎么写。</p>
+</blockquote>
+<h3 id="重新设计"><a href="#重新设计" class="headerlink" title="重新设计"></a>重新设计</h3><p>想了想，现在的注册虽然完成了，但是过于复杂。在邮件里嵌入链接进行验证是一个不太聪明的行为。<br>所以决定重新设计下使用流程：  </p>
+<ol>
+<li>注册<ol>
+<li>输入图片验证码，发送带有验证码的邮件。  </li>
+<li>同一页面，输入邮件的验证码提交后。即注册完成</li>
+</ol>
+</li>
+<li>登录<ol>
+<li>账号，密码，图片验证码。  </li>
+<li>正确则登陆成功</li>
+</ol>
+</li>
+<li>忘记密码<ol>
+<li>输入图片验证码，发送带有验证码的邮件。</li>
+<li>同一页面，输入邮件的验证码以及新密码提交后。即重置完成</li>
+</ol>
+</li>
+</ol>
+<p>顺带把接口写好，需要什么，返回什么得提前规划好。</p>
+<blockquote>
+<p>2022-07-11<br>脑子不是一般的乱，之前的设计问题很大。虽然也不是不能实现。<br>好的设计会让程序更加简洁高效，接口写了一部分，先实现这部分。</p>
+</blockquote>
+<p>被大佬推荐了两个工具<br>自动生成api文档的swagger包，经过一番调试，终于能正常的扫描到controller中的所有api了。后面要使用他的注解来使生成的api更详细。<br>还有个就是Apifox，可以模拟各种请求，方便了调试。同时，也支持将swagger生成的api数据导入。也可以多人协同开发。应该会蛮好用的。  </p>
+<blockquote>
+<p>2022-07-11<br>晚上补充，重构真痛苦啊。<br>在博客上写的接口文档就不用了，不如软件生成的。<del>害，亏我写了蛮久的</del></p>
+</blockquote>
+<p>注册功能，重新写好了。比之前的逻辑简单了许多。重置密码的流程和注册是一样的，也方便后面开发。<br>使用spring-session-data-redis。把数据存到session中，session把数据存到redis，实现数据共享。<br>（不存redis问题好像也不大，因为改变了设计，不在邮件中夹杂链接，所以不需要考虑用户不同源访问的数据共享问题。这个依赖包是解决分布式session共享的问题的，用在这感觉没啥必要，纯session存储就足够了。不过都写好了也无所谓了）  </p>
+<blockquote>
+<p>2022-07-13<br>昨天忘写了。python实训布置了最后的大作业，就做个东西交上去，也没什么限制。我到现在也没想好要做啥，这几天要暂停去写大作业了。</p>
+</blockquote>
+<p>注册，登录，重置的接口基本实现了，但是没有完整的测试。<br>昨天试着写了上传图片的模块，还行，能上传，问题不大。后面要考虑如何和python程序进行数据交互了。<br>所以暂时缓一缓，因为负责python的人跑去上夜班了，没啥时间交流。<br>所以这几天先学学nginx吧。<del>后面部署还是我</del>。nginx看完再考虑别的。  </p>
+<blockquote>
+<p>2022-07-20<br>python实训的大作业交了个qq机器人，也不知道老师能不能跑起来。等python熟练点了，把qq机器人的配置和部署记录下。</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">咕咕咕</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://2450123.github.io/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/">https://2450123.github.io/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://2450123.github.io" target="_blank">咕咕咕的小破站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/SpringBoot/">SpringBoot</a><a class="post-meta__tags" href="/tags/java/">java</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E7%AC%94%E8%AE%B0/Nginx%E7%AC%94%E8%AE%B0/"><img class="prev-cover" src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Nginx笔记</div></div></a></div><div class="next-post pull-right"><a href="/%E7%AC%94%E8%AE%B0/SpringBoot%E7%AC%94%E8%AE%B0/"><img class="next-cover" src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SpringBoot笔记</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/%E7%AC%94%E8%AE%B0/SpringBoot%E7%AC%94%E8%AE%B0/" title="SpringBoot笔记"><img class="cover" src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-09</div><div class="title">SpringBoot笔记</div></div></a></div><div><a href="/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/%E7%8C%B4%E5%AD%90%E6%8E%92%E5%BA%8F/" title="猴子排序"><img class="cover" src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-30</div><div class="title">猴子排序</div></div></a></div><div><a href="/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/%E7%9D%A1%E8%A7%89%E6%8E%92%E5%BA%8F/" title="睡觉排序"><img class="cover" src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-16</div><div class="title">睡觉排序</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyIpT.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">咕咕咕</div><div class="author-info__description">路漫漫其修远兮，吾将上下而求索。</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/2450123" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:gu_lu_lu@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://message/?uin=3337043591" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">咕咕咕学Java！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99"><span class="toc-number">1.</span> <span class="toc-text">关于这个网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">关于网站的架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.</span> <span class="toc-text">数据库设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">具体开发过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E9%83%A8%E5%88%86%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="toc-number">2.1.</span> <span class="toc-text">注册部分（未完成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%81%E5%B8%88%E6%B3%A8%E5%86%8C%E9%83%A8%E5%88%86%EF%BC%88%E5%9F%BA%E6%9C%AC%E5%AE%8C%E6%88%90"><span class="toc-number">2.2.</span> <span class="toc-text">老师注册部分（基本完成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.3.</span> <span class="toc-text">重新设计</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E7%AC%94%E8%AE%B0/Nginx%E7%AC%94%E8%AE%B0/" title="Nginx笔记"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Nginx笔记"/></a><div class="content"><a class="title" href="/%E7%AC%94%E8%AE%B0/Nginx%E7%AC%94%E8%AE%B0/" title="Nginx笔记">Nginx笔记</a><time datetime="2022-06-24T11:28:18.000Z" title="发表于 2022-06-24 19:28:18">2022-06-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/" title="关于健康码识别的网站开发进度记录"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于健康码识别的网站开发进度记录"/></a><div class="content"><a class="title" href="/%E8%AE%B0%E5%BD%95%E7%BC%96%E7%A8%8B/%E5%85%B3%E4%BA%8E%E5%81%A5%E5%BA%B7%E7%A0%81%E8%AF%86%E5%88%AB%E7%9A%84%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6/" title="关于健康码识别的网站开发进度记录">关于健康码识别的网站开发进度记录</a><time datetime="2022-05-21T12:22:23.000Z" title="发表于 2022-05-21 20:22:23">2022-05-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E7%AC%94%E8%AE%B0/SpringBoot%E7%AC%94%E8%AE%B0/" title="SpringBoot笔记"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot笔记"/></a><div class="content"><a class="title" href="/%E7%AC%94%E8%AE%B0/SpringBoot%E7%AC%94%E8%AE%B0/" title="SpringBoot笔记">SpringBoot笔记</a><time datetime="2022-05-09T01:12:18.000Z" title="发表于 2022-05-09 09:12:18">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E7%AC%94%E8%AE%B0/Redis%E7%AC%94%E8%AE%B0/" title="Redis笔记"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis笔记"/></a><div class="content"><a class="title" href="/%E7%AC%94%E8%AE%B0/Redis%E7%AC%94%E8%AE%B0/" title="Redis笔记">Redis笔记</a><time datetime="2022-05-07T13:38:10.000Z" title="发表于 2022-05-07 21:38:10">2022-05-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/%E7%8C%B4%E5%AD%90%E6%8E%92%E5%BA%8F/" title="猴子排序"><img src= "/img/friend_404.gif" data-lazy-src="https://s1.ax1x.com/2022/03/13/bqyTcF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="猴子排序"/></a><div class="content"><a class="title" href="/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B3/%E7%8C%B4%E5%AD%90%E6%8E%92%E5%BA%8F/" title="猴子排序">猴子排序</a><time datetime="2022-04-30T11:59:56.000Z" title="发表于 2022-04-30 19:59:56">2022-04-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By 咕咕咕</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20222450" target="_blank">萌ICP备20222450号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="7345595717" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><link rel="stylesheet" href="https://2450123.github.io/css/Lete.css"><script data-pjax src="https://2450123.github.io/js/Lete.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
